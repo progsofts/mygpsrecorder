@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:text="Start" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Stop" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="Refresh" />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Post" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="Setting" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/Frist"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:text="|&lt;" />
+        <Button
+            android:id="@+id/Prev10"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:text="10&lt;" />
+        <Button
+            android:id="@+id/Prev"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:text="&lt;" />
+        <Button
+            android:id="@+id/Next"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:text=">" />
+        <Button
+            android:id="@+id/Next10"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:text=">10" />
+        <Button
+            android:id="@+id/Last"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:text=">|" />
+        <Button
+            android:id="@+id/Change"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:text="[]" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello world!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <org.osmdroid.views.MapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</LinearLayout>
